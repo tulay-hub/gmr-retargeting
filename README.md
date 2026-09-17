@@ -1,10 +1,10 @@
-<p align="center"><a href="#zh">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="#en">🇬🇧 English</a></p>
+<p align="center"><a href="#zh">中文</a> &nbsp;|&nbsp; <a href="#en">English</a></p>
 <a id="zh"></a>
 
-# GMR Lens110 Retargeting
+# GMR 双足人形机器人重定向
 
 这是仓库中第一套重定向工具，实体目录为 `tools/retargeting/gmr_lens110`。它在 GMR 通用 IK 上增加了
-Lens110 的二阶段适配、贴地、站距、限位和训练数据导出。
+双足人形机器人的二阶段适配、贴地、站距、限位和训练数据导出。
 
 ## 推荐流程
 
@@ -17,7 +17,7 @@ BVH(nokov, 120 Hz)
   -> 120 Hz training npy + 50 Hz deployment CSV
 ```
 
-推荐 `hybrid`：腿部用同名关节，手臂使用上肢 IK 追踪。直接 BVH->Lens110 的旧配置只作为历史对照，原因是
+推荐 `hybrid`：腿部用同名关节，手臂使用上肢 IK 追踪。直接 BVH->双足人形机器人的旧配置只作为历史对照，原因是
 坐标手性和肩部 roll 方向不能靠一个四元数偏移解决。
 
 ## 快速开始
@@ -44,12 +44,12 @@ python tools/retargeting/gmr_lens110/lens110/convert_bvh_to_lens110.py \
 - 检查 21 个关节限位、root 姿态、脚底贴地、最小站距、速度和可见手部 mesh；
 - 通过回放后，才把产物移动/登记到对应项目 `projects/*/data/processed` 或 `exports`。
 
-Lens110 专用脚本列表和路径约定见 [`lens110/README.md`](lens110/README.md)。
+双足人形机器人专用脚本列表和路径约定见 [`lens110/README.md`](lens110/README.md)。
 
 <a id="en"></a>
 
 ## English
 
-This repository contains the GMR motion-retargeting workflow. Its primary path is human-motion input such as BVH, retargeted through a supported robot model, and exported as local Lens110 21-DoF motion data. It also contains IK profiles, robot assets, MuJoCo inspection tools, and conversion utilities.
+This repository contains the GMR motion-retargeting workflow. Its primary path is human-motion input such as BVH, retargeted through a supported robot model, and exported as local 21-DoF motion data for a bipedal humanoid robot. It also contains IK profiles, robot assets, MuJoCo inspection tools, and conversion utilities.
 
 Use the local `gmr` environment and pass explicit input, target XML, and output paths. Before a clip becomes training data, verify coordinate frames, quaternion order, joint order, FPS, ground contacts, limits, finite values, and replay behavior. A robot-model replay is simulation evidence only.
