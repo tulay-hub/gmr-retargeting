@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="asset_leg">
+    <mesh name = "left-hip-roll" file = "../../mesh/left_hip_roll.stl" />
+    <mesh name = "left-hip-yaw" file = "../../mesh/left_hip_yaw.stl" />
+    <mesh name = "left-hip-pitch" file = "../../mesh/left_hip_pitch.stl"/>
+    <mesh name = "left-knee" file = "../../mesh/left_tarsus.stl"/>
+    <mesh name = "left-toe-A" file = "../../mesh/left_toe_A.stl" />
+    <mesh name = "left-toe-A-rod" file = "../../mesh/left_toe_A_rod.stl" />
+    <mesh name = "left-toe-B" file = "../../mesh/left_toe_B.stl"/>
+    <mesh name = "left-toe-B-rod" file = "../../mesh/left_toe_B_rod.stl" />
+    <mesh name = "left-toe-pitch" file = "../../mesh/left_toe_pitch.stl" />
+    <mesh name = "left-toe-roll" file = "../../mesh/left_toe_roll.stl"/>
+
+    <mesh name = "right-hip-roll" file = "../../mesh/right_hip_roll.stl" />
+    <mesh name = "right-hip-yaw" file = "../../mesh/right_hip_yaw.stl" />
+    <mesh name = "right-hip-pitch" file = "../../mesh/right_hip_pitch.stl" />
+    <mesh name = "right-knee" file = "../../mesh/right_tarsus.stl" />
+    <mesh name = "right-toe-A" file = "../../mesh/right_toe_A.stl" />
+    <mesh name = "right-toe-A-rod" file = "../../mesh/right_toe_A_rod.stl" />
+    <mesh name = "right-toe-B" file = "../../mesh/right_toe_B.stl" />
+    <mesh name = "right-toe-B-rod" file = "../../mesh/right_toe_B_rod.stl" />
+    <mesh name = "right-toe-pitch" file = "../../mesh/right_toe_pitch.stl" />
+    <mesh name = "right-toe-roll" file = "../../mesh/right_toe_roll.stl" />
+</mujoco>

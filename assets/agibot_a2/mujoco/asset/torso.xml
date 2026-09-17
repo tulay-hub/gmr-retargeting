@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="asset_torso">
+    <mesh name = "torso" file = "../../mesh/body.stl" />
+    <mesh name = "logo" file = "../../mesh/logo.stl" />
+</mujoco>
