@@ -1,0 +1,3 @@
+[submodule "datasets/dance"]
+	path = datasets/dance
+	url = https://github.com/tulay-hub/dance-dataset.git
