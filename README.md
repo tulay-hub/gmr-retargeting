@@ -1,3 +1,6 @@
+<p align="center"><a href="#zh">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="#en">🇬🇧 English</a></p>
+<a id="zh"></a>
+
 # GMR Lens110 Retargeting
 
 这是仓库中第一套重定向工具，实体目录为 `tools/retargeting/gmr_lens110`。它在 GMR 通用 IK 上增加了
@@ -42,6 +45,8 @@ python tools/retargeting/gmr_lens110/lens110/convert_bvh_to_lens110.py \
 - 通过回放后，才把产物移动/登记到对应项目 `projects/*/data/processed` 或 `exports`。
 
 Lens110 专用脚本列表和路径约定见 [`lens110/README.md`](lens110/README.md)。
+
+<a id="en"></a>
 
 ## English
 
